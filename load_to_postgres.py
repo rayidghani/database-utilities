@@ -1,3 +1,16 @@
+"""
+Takes a path to csv or a url with a csv and loads it in to
+postgres table. Assumes header row with column names.
+ 
+Input: filepath or url, table name, db connection string 
+Output: table created in postgres database
+
+Uses: usual things plus ohio
+pip install ohio
+
+
+"""
+
 import pandas as pd
 import requests
 import ohio.ext.pandas
