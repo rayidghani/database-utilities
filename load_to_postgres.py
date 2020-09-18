@@ -22,7 +22,7 @@ import sys
 # source can be csv file or url
 source=sys.argv[1] 
 table_name=sys.argv[2]
-# example string: postgres://username:password@localhost:5432/postgres
+# example string: postgres://username:password@database_server_name:5432/database_name
 db_string = sys.argv[3]
 
 if source.startswith('http'):
